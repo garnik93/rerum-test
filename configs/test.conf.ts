@@ -1,5 +1,5 @@
 import type {Options} from '@wdio/types'
-import {isRemote} from "../commons/LaunchParameters.ts";
+import {isRemote, path, setRemotePath, setRemotePort, setRemoteUrl} from "../commons/LaunchParameters.ts";
 
 export const config: Options.Testrunner = {
     //
@@ -128,9 +128,9 @@ export const config: Options.Testrunner = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
-    baseUrl: 'http://localhost:8080/',
-    port: isRemote ? 4444 : undefined,
-    path: isRemote ? '/wd/hub' : '',
+    baseUrl: isRemote ? setRemoteUrl : 'http://localhost/',
+    port: isRemote ? setRemotePort : undefined,
+    path: isRemote ? setRemotePath : undefined,
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 30000,

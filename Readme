@@ -8,21 +8,25 @@ WebStorm : {
 node.js : 'https://nodejs.org/ru'
 
 2. Open WebStorm -> File -> new -> Project from version control...
-	send in URL field remote branch url 'https://github.com/garnik93/namecheaptest.git'
+	send in URL field remote branch url 'https://github.com/garnik93/rerum-test'
 
 3. Open terminal in WebStorm and run this command:
- 	1. npm install
- 	2. npm run webdriver:update
+ 	1. npm install                         - install project and dependencies
 
 4 Run Test:
-	1. npm run test
+	1. npm run run:all:test                - running all tests in sequential mode
+    2. npm run chrome:parallels:test       - running chrome tests in parallel mode
+    3. npm run firefox:parallels:test      - running firefox tests in parallel mode
+    4. npm run chrome:default:test         - running chrome tests in sequential mode
+    5. npm run firefox:default:test        - running firefox tests in sequential mode
 
-// The tests will run on Chrome by default
+5 Allure report:
+    1. npm run allure:report               - create Allure report
 
-// Go to LaunchParameters and set which browser the test will run on, and if you have a remote docker container with selenoid you can run on it
+//
 
-
-Errors:
-
-// If you need to update your browser, just do it chrome or firefox or all //actual chrome version '118.0'
-// If you get the error 'Error: spawn java ENOENT' then you probably need to install the Java JDK 'https://www.oracle.com/java/technologies/downloads/#jdk20-windows'
+// If you have a remote docker container with selenoid, you can run on the remote server by filling in these fields in LaunchParameters
+    1. isRemote      - // default value 'false' // If you want start tests on remote selenoid server switch this parameter to 'true'
+    1. setRemoteUrl  - // default value 'http://localhost:8080/'
+    2. setRemotePath - // default value '/wd/hub'
+    3. setRemotePort - // default value '4444'

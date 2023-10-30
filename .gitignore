@@ -2,5 +2,5 @@ allure-results
 allure-report
 node_modules
 configs/base.test.ts
-./test_data/test.data.json
+test_data/test.data.json
 base.test.ts
