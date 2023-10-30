@@ -1,0 +1,26 @@
+{
+  "valid": {
+    "min_characters": "G",
+    "max_characters": "GarnikGarnikGarnikGarnikGarnik",
+    "normal_characters": "Garik",
+    "email": "ninonef754@hondabbs.com",
+    "phone": 605086609,
+    "checkbox": true
+  },
+  "invalid": {
+    "zero_chars": "",
+    "over_30_chars": "GarnikGarnikGarnikGarnikGarnikGarnik",
+    "special_symbols": "-!@£$%^&*()",
+    "script": "<script>alert(«I hacked this!»)</script>",
+    "sql": "FOO’); DROP TABLE USERS",
+    "email_min": "sdfsfs@dfsdx.com",
+    "email_over": "GarnikGarnikGarnik@GarnikGarnikGarnik.com",
+    "email_bad_domain": "sdfsfs@dfsdx.bad_domain",
+    "phone_set_8_number": 12345678,
+    "phone_set_10_number": 12345678910,
+    "phone_set_0": "000000000",
+    "phone_set_1_9": 123456789,
+    "phone_chars": "scripted",
+    "invalid_checkbox": false
+  }
+}

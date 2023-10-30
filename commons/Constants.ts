@@ -1,0 +1,2 @@
+export const TIMEOUTS_VISIBILITY = 30000
+export const TIMEOUTS_INTERVAL = 200

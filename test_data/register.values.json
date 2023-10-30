@@ -1,0 +1,20 @@
+{
+  "registration": {
+    "firstPageRegistration": {
+      "realName": "Garnik",
+      "surName": "Gevorgyan",
+      "email": "ninonef754@hondabbs.com",
+      "phone": 605086609
+    },
+    "yourPersonalDataPage": {
+      "citizenship": "CZE",
+      "countryOfBirth": "CZE",
+      "personalIdentificationNumber": "330820/743",
+      "placeOfBirth": "Odessa",
+      "identityCardNumber": "123456789",
+      "maritalStatus": "Single",
+      "highestEducationLevel": "",
+      "numberOfSupportedChildren": "0"
+    }
+  }
+}

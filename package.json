@@ -1,0 +1,28 @@
+{
+  "name": "rerum-test",
+  "version": "1.0.0",
+  "description": "Test task",
+  "scripts": {
+    "run:all:test": "npm run allure:clear && wdio run configs/test.conf.ts",
+    "chrome:parallels:test": "npm run allure:clear && wdio run configs/chrome.parallel.conf.ts",
+    "firefox:parallels:test": "npm run allure:clear && wdio run configs/firefox.parallel.conf.ts",
+    "chrome:default:test": "npm run allure:clear && wdio run configs/chrome.default.conf.ts",
+    "firefox:default:test": "npm run allure:clear && wdio run configs/firefox.default.conf.ts",
+    "allure:clear": "rm -r allure-results || true && rm -r allure-report || true",
+    "allure:report": "allure generate ./allure-results && allure open"
+  },
+  "author": "Garnik Gevorgyan",
+  "license": "ISC",
+  "dependencies": {
+    "@wdio/allure-reporter": "^8.20.0",
+    "@wdio/cli": "^8.20.5",
+    "@wdio/local-runner": "^8.20.5",
+    "@wdio/mocha-framework": "^8.20.3",
+    "@wdio/spec-reporter": "^8.20.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  },
+  "devDependencies": {
+    "mocha.parallel": "^0.15.6"
+  }
+}

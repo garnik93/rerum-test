@@ -1,0 +1,28 @@
+1. Download and install:
+
+WebStorm : {
+	for windows : 'https://www.jetbrains.com/ru-ru/webstorm/download/#section=windows'
+	for mac : 'https://www.jetbrains.com/ru-ru/webstorm/download/#section=mac'
+} or VSCode
+
+node.js : 'https://nodejs.org/ru'
+
+2. Open WebStorm -> File -> new -> Project from version control...
+	send in URL field remote branch url 'https://github.com/garnik93/namecheaptest.git'
+
+3. Open terminal in WebStorm and run this command:
+ 	1. npm install
+ 	2. npm run webdriver:update
+
+4 Run Test:
+	1. npm run test
+
+// The tests will run on Chrome by default
+
+// Go to LaunchParameters and set which browser the test will run on, and if you have a remote docker container with selenoid you can run on it
+
+
+Errors:
+
+// If you need to update your browser, just do it chrome or firefox or all //actual chrome version '118.0'
+// If you get the error 'Error: spawn java ENOENT' then you probably need to install the Java JDK 'https://www.oracle.com/java/technologies/downloads/#jdk20-windows'
