@@ -15,18 +15,18 @@ node.js : 'https://nodejs.org/ru'
 
 4 Run Test:
 	1. npm run run:all:test                - running all tests in sequential mode
-    2. npm run chrome:parallels:test       - running chrome tests in parallel mode
-    3. npm run firefox:parallels:test      - running firefox tests in parallel mode
-    4. npm run chrome:default:test         - running chrome tests in sequential mode
-    5. npm run firefox:default:test        - running firefox tests in sequential mode
+    	2. npm run chrome:parallels:test       - running chrome tests in parallel mode
+    	3. npm run firefox:parallels:test      - running firefox tests in parallel mode
+    	4. npm run chrome:default:test         - running chrome tests in sequential mode
+    	5. npm run firefox:default:test        - running firefox tests in sequential mode
 
 5 Allure report:
-    1. npm run allure:report               - create Allure report
+    	1. npm run allure:report               - create Allure report
 
 //
 
 // If you have a remote docker container with selenoid, you can run on the remote server by filling in these fields in LaunchParameters
-    1. isRemote      - // default value 'false' // If you want start tests on remote selenoid server switch this parameter to 'true'
-    1. setRemoteUrl  - // default value 'http://localhost:8080/'
-    2. setRemotePath - // default value '/wd/hub'
-    3. setRemotePort - // default value '4444'
+    	1. isRemote      			- default value 'false' // If you want start tests on remote selenoid server switch this parameter to 'true'
+    	1. setRemoteUrl  			- default value 'http://localhost:8080/'
+    	2. setRemotePath 			- default value '/wd/hub'
+    	3. setRemotePort 			- default value '4444'
