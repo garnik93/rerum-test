@@ -82,7 +82,7 @@ ScenariosData.set('RERUM_5', {
     email: email_max_length,
     phone: phone,
     checkbox: checkbox,
-    title: "valid max email chars",
+    title: "valid email max chars",
     state: true
 })
 ScenariosData.set('RERUM_6', {
@@ -90,7 +90,7 @@ ScenariosData.set('RERUM_6', {
     email: email_min_length,
     phone: phone,
     checkbox: checkbox,
-    title: "valid min email chars",
+    title: "valid email min chars",
     state: true
 })
 // valid phone
@@ -167,7 +167,7 @@ ScenariosData.set('RERUM_15', {
     email: email_with_no_values,
     phone: phone,
     checkbox: checkbox,
-    title: "invalid email with no values",
+    title: "invalid email with no value",
     state: false
 })
 ScenariosData.set('RERUM_16', {
@@ -264,7 +264,7 @@ ScenariosData.set('RERUM_27', {
     email: email,
     phone: phone_chars,
     checkbox: checkbox,
-    title: "invalid set chars",
+    title: "invalid set phone chars",
     state: false
 })
 

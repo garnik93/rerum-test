@@ -1,5 +1,5 @@
 import type {Options} from '@wdio/types'
-import {isRemote, path, setRemotePath, setRemotePort, setRemoteUrl} from "../commons/LaunchParameters.ts";
+import {isRemote, setRemotePath, setRemotePort, setRemoteUrl} from "../commons/LaunchParameters.ts";
 
 export const config: Options.Testrunner = {
     //
@@ -235,7 +235,6 @@ export const config: Options.Testrunner = {
      * @param {Array.<String>} specs        List of spec file paths that are to be run
      * @param {object}         browser      instance of created browser/device session
      */
-
     before: async function (capabilities, specs) {
         await browser.maximizeWindow()
     },

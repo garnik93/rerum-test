@@ -1,3 +1,3 @@
 import {registrationTest} from "../../../test/registration.test.ts";
 
-registrationTest('all')
+registrationTest('RERUM_27')

@@ -4,8 +4,7 @@ import RegistrationPage from "../pageobjects/registration.page.ts";
 import YourPersonalDataPage from "../pageobjects/your.personal.data.page.ts";
 import WelcomePage from "../pageobjects/welcome.page.ts";
 
-export function registration(setScenario: string) {
-
+export function registrationTest(setScenario: string) {
     if (setScenario === 'all') {
         for (const scenario of getScenarios()) {
             test(scenario)
@@ -13,8 +12,6 @@ export function registration(setScenario: string) {
     } else {
         test(getScenario(setScenario))
     }
-
-
 }
 
 function test(scenario: IScenarios) {
