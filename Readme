@@ -1,11 +1,11 @@
 1. Download and install:
 
-WebStorm : {
-	for windows : 'https://www.jetbrains.com/ru-ru/webstorm/download/#section=windows'
-	for mac : 'https://www.jetbrains.com/ru-ru/webstorm/download/#section=mac'
-} or VSCode
+	WebStorm : {
+		for windows : 'https://www.jetbrains.com/ru-ru/webstorm/download/#section=windows'
+		for mac : 'https://www.jetbrains.com/ru-ru/webstorm/download/#section=mac'
+	} or VSCode
 
-node.js : 'https://nodejs.org/ru'
+	node.js : 'https://nodejs.org/ru'
 
 2. Open WebStorm -> File -> new -> Project from version control...
 	send in URL field remote branch url 'https://github.com/garnik93/rerum-test'
