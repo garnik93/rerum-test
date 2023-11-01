@@ -4,6 +4,7 @@
   "description": "Test task",
   "scripts": {
     "run:all:test": "npm run allure:clear && wdio run configs/test.conf.ts",
+    "run:all:test:parallels": "npm run allure:clear && npm run chrome:parallels:test & npm run firefox:parallels:test",
     "chrome:parallels:test": "npm run allure:clear && wdio run configs/chrome.parallel.conf.ts",
     "firefox:parallels:test": "npm run allure:clear && wdio run configs/firefox.parallel.conf.ts",
     "chrome:default:test": "npm run allure:clear && wdio run configs/chrome.default.conf.ts",
