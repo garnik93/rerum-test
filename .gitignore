@@ -4,3 +4,4 @@ node_modules
 configs/base.test.ts
 test_data/test.data.json
 base.test.ts
+.idea
